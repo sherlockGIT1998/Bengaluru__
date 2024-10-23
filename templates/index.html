@@ -1,0 +1,110 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BENGALURU HOUSE PRICE PREDICTION</title>
+</head>
+<body style="background-color: rgb(241, 192, 192);"></body>
+
+<body>
+
+    <h1> BENGALURU HOUSE PRICE PREDICTION </h1>
+    <form method = "GET" action= "/predict_prices"> 
+
+        <label>Availability&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <select name = "availability">
+
+            <option value = 'Immediate Possession'>Immediate Possession</option>
+            <option value = "Ready To Move">Ready To_Move</option>
+            <option value = '22-Jan'>January</option>
+            <option value = '18-Feb'>February</option>
+            <option value = '19-Mar'>March</option>
+            <option value = '20-Apr'>April</option>
+            <option value = '18-May'>May</option>
+            <option value = '21-Jun'>June</option>
+            <option value = '18-Jul'>Jully</option>
+            <option value = '15-Aug'>August</option>
+            <option value = '19-Sep'>September</option>
+            <option value = '16-Oct'>October</option>
+            <option value = '14-Nov'>Novenber</option>
+            <option value = '19-Dec'>December</option>
+        </select>
+
+
+        <br>
+        <br>
+
+        <label>Total Square Feet Area&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "total_sqft">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Bathroom&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "bath">
+        </select>
+
+        <br>
+        <br>
+
+        <label>Balcony&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <input type = "text" name = "balcony">
+        </select>
+
+        <br>
+        <br>
+
+
+        <label>Location&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <select name = "location">
+
+            <option value = 'Electronic City Phase II'>Electronic City Phase II</option>
+            <option value = 'Chikka Tirupathi'>Chikka Tirupathi</option>
+            <option value = 'Uttarahalli'>Uttarahalli</option>
+            <option value = 'Havanur extension'>Havanur extension</option>
+            <option value = 'Abshot Layout'>Abshot Layout</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Area Type&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <label for = "area_type">
+        <select name = "area_type" id="area_type">
+                <option value = 'Super built-up  Area'>Super built up_Area</option>
+                <option value = 'Plot  Area'>Plot Area</option>
+                <option value = 'Built-up  Area'>Built up Area</option>
+                <option value = 'Carpet  Area'>Carpet Area</option>
+        </select>
+
+        <br>
+        <br>
+
+        <label>Size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;</label>
+        <label for = "size">
+        <select name = "size" id="size">
+                <option value = '2 BHK'>2 BHK</option>
+                <option value = '3 Bedroom'>3 Bedroom</option>
+                <option value = '4 Bedroom'>4 Bedroom</option>
+                <option value = '5 Bedroom'>5 Bedroom</option>
+                <option value = '6 Bedroom'>6 Bedroom</option>
+        </select>
+
+        <br>
+            <br>
+           
+            <input type = "submit" value = "SUBMIT">
+
+            <br>
+            <p>Price of Your Dream House would be Rs<b> {{ prediction}} Lakh/- </b>.</p>
+
+       
+
+    </form>
+
+   
+</body>
+</html>
